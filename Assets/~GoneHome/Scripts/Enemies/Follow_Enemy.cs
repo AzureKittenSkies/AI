@@ -5,7 +5,7 @@ using UnityEngine.AI;
 
 namespace GoneHome
 {
-    public class Enemy : MonoBehaviour
+    public class Follow_Enemy : MonoBehaviour
     {
 
         private NavMeshAgent agent;
