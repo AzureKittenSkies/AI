@@ -1,32 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.Events;
 
 namespace GoneHome
 {
     public class Death : MonoBehaviour
     {
-
-        // Use this for initialization
-        void Start()
-        {
-
-        }
-
-        // Update is called once per frame
-        void Update()
-        {
-
-        }
-
-
-        void Died()
-        {
-            // Play animation
-            // Spawn particles
-            // Perform other events
-        }
+        public UnityEvent onDeath;
+        
 
         // Detect collision with other triggers
         void OnTriggerEnter(Collider other)
@@ -35,7 +17,7 @@ namespace GoneHome
             if (other.name == "DeathZone" || other.name == "Enemy")
             {
                 // Kill object
-                Died();
+                onDeath.Invoke();
             }
         }
 
