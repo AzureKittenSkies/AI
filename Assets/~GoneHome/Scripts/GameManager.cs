@@ -19,11 +19,28 @@ namespace GoneHome
 
         public void RestartLevel()
         {
-            // Get the current active scene
-            Scene currentScene = SceneManager.GetActiveScene();
-            // Load the current scene
-            SceneManager.LoadScene(currentScene.buildIndex);
+            // Grab all enemies in the scene into array
+            Follow_Enemy[] followEnemies = FindObjectsOfType<Follow_Enemy>();
+            Patrol_Enemy[] patrolEnemies = FindObjectsOfType<Patrol_Enemy>();
+
+            // Loop through all enemies
+            foreach (var enemy in followEnemies)
+            {
+                // Reset enemy
+                enemy.Reset();
+            }
+
+            foreach (var enemy in patrolEnemies)
+            {
+                enemy.Reset();
+            }
+
+            // Grab player in the scene
+            Player player = FindObjectOfType<Player>();
+            // reset player
+            player.Reset();
         }
+
 
     }
 }
