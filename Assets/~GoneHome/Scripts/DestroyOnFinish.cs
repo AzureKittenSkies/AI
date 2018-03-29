@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace GoenHome
+namespace GoneHome
 {
     [RequireComponent(typeof(ParticleSystem))]
     public class DestroyOnFinish : MonoBehaviour

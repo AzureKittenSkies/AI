@@ -3,4 +3,5 @@
  <image source="../Environment/tileset.png" width="400" height="368"/>
  <tile id="180" probability="0.1"/>
  <tile id="182" probability="0.1"/>
+ <tile id="467" probability="0.05"/>
 </tileset>
