@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 22/03/2018 10:24:40 AM-->
+<!--Last exported: 5/04/2018 11:50:09 AM-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Level_01_mesh_0001" material="tileset" />
   <AssignMaterial mesh="Level_01_mesh_0002" material="tileset" />
@@ -126,7 +126,7 @@
       <GameObject name="PolylineObject" x="11.84" y="-5.27749968" rotation="0" layer="">
         <PolylineObjectComponent tmx-object-id="44" tmx-object-name="" tmx-object-type="" tmx-object-x="1184" tmx-object-y="527.75" tmx-object-width="0" tmx-object-height="0" tmx-object-rotation="0" />
         <EdgeCollider2D>
-          <Points>0,0 0.48,-0.00125 0.96,-0.0025</Points>
+          <Points>0,-0.0025 0.48,-0.0025 0.96,-0.0025</Points>
         </EdgeCollider2D>
       </GameObject>
       <GameObject name="PolylineObject" x="8" y="-5.44" rotation="0" layer="">
