@@ -197,6 +197,20 @@ namespace SunnyLand
 
                 // checkenemy(hit)
                 CheckEnemy(hit);
+
+                if (inputH != 0)
+                {
+                    float dir = hit.normal.x * inputH;
+                    if (dir > 0.1f)
+                    {
+                        print("GOING DOWN!");
+                    }
+                    else if (dir < -0.1f)
+                    {
+                        print("GOING UP!");
+                    }
+                }
+
                 // detect slope
                 if (Mathf.Abs(hit.normal.x) > 0.1f)
                 {
