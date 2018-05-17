@@ -16,9 +16,9 @@ namespace SunnyLand
         {
             player = GetComponent<PlayerController>();
             // Subscribe Anim's functions to Player Events
-            player.onJump += OnJump;
-            player.onMove += OnMove;
-            player.onClimb += OnClimb;
+            //player.OnJump += OnJump;
+          //  player.onMove += OnMove;
+          //  player.onClimb += OnClimb;
         }
 
         // Update is called once per frame
