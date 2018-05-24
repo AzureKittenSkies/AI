@@ -112,6 +112,10 @@
      <Compile Include="Assets\~SunnyLand\Scripts\Helpers\PlayerAnim.cs" />
      <Compile Include="Assets\~SunnyLand\Scripts\PlayerController.cs" />
      <Compile Include="Assets\~SunnyLand\Scripts\UserInput.cs" />
+     <Compile Include="Assets\~TowerDefense\Scripts\Cameras\MouseOrbit.cs" />
+     <Compile Include="Assets\~TowerDefense\Scripts\Enemies\AIAgent.cs" />
+     <Compile Include="Assets\~TowerDefense\Scripts\Enemies\Droid.cs" />
+     <Compile Include="Assets\~TowerDefense\Scripts\TowerManager.cs" />
      <None Include="Assets\Tiled2Unity\Shaders\shaDiffuseDepth-Instanced.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\DepthOfField.shader" />
      <None Include="Assets\PostProcessing\Resources\Shaders\MotionBlur.cginc" />
