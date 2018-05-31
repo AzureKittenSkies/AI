@@ -61,12 +61,9 @@ namespace TowerDefence
                 Quaternion rotation = Quaternion.Euler(y, x, 0);
                 
                 float scroll = Input.GetAxis("Mouse ScrollWheel");
+                distance = Mathf.Clamp(distance - scroll * 5, distanceMin, distanceMax);
 
                 Vector3 position = rotation * new Vector3(0, 0, -distance) + target.position;
-                if (cam.orthographic)
-                {
-                    cam.orthographicSize = distance;
-                }
 
                 transform.rotation = rotation;
                 transform.position = position;

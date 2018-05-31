@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
 
-namespace TowerDefence
+namespace TowerDefense
 {
     [RequireComponent(typeof(NavMeshAgent))]
     public class AIAgent : MonoBehaviour
     {
+        [System.NonSerialized]
         #region Variables
         public Transform target;
 
