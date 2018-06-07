@@ -146,7 +146,8 @@
     <Compile Include="Assets\~TowerDefense\Scripts\Enemies\Enemy.cs" />
     <Compile Include="Assets\~TowerDefense\Scripts\Spawners\EnemySpawner.cs" />
     <Compile Include="Assets\~TowerDefense\Scripts\Spawners\Spawner.cs" />
-    <Compile Include="Assets\~TowerDefense\Scripts\TowerManager.cs" />
+    <Compile Include="Assets\~TowerDefense\Scripts\Towers\Cannon.cs" />
+    <Compile Include="Assets\~TowerDefense\Scripts\Towers\Tower.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\PostProcessing\Editor Resources\Monitors\HistogramCompute.compute" />
