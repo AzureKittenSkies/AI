@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace TowerDefence
+namespace TowerDefense
 {
     public class MouseOrbit : MonoBehaviour
     {

@@ -35,6 +35,17 @@ namespace TowerDefense
             }
         }
 
+        void OnDestroy()
+        {
+            // if there is a health slider attatched to the enemy
+            if (healthSlider)
+            {
+                // destroy the health bar ui
+                Destroy(healthSlider.gameObject);
+            }
+        }
+
+
         Vector3 GetHealthBarPos()
         {
             Camera cam = Camera.main;
@@ -61,6 +72,13 @@ namespace TowerDefense
         {
             // deal damage to droid
             health -= damage;
+
+            // update slider
+            if (healthSlider)
+            {
+                // convert health to a 0-1 value (health/maxHealth)
+                healthSlider.value = health / maxHealth;
+            }
 
             // if there is no health
             if (health <= 0)

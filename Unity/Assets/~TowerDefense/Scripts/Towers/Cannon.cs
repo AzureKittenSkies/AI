@@ -32,11 +32,15 @@ namespace TowerDefense
             // line to enemy
             line.SetPosition(2, e.transform.position);
 
+            Vector3 targetPos = e.transform.position;
+            Vector3 barrelPos = barrel.position;
+            Vector3 fireDirection = targetPos - barrelPos;
+            barrel.rotation = Quaternion.LookRotation(fireDirection);
         }
-
+        
         public override void Attack(Enemy e)
         {
-            
+            e.DealDamage(damage);
         }
 
     }
